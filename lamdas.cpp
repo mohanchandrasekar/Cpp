@@ -35,5 +35,11 @@ int main(int argc, char const *argv[])
 
     cout << "First number greater than 5 is : " << *p << endl;
 
+    auto count = count_if(v1.begin(), v1.end(), [=](int i){
+         return (i > = N);
+    });
+
+    cout << "total number of 5 is " << count << endl;
+     
     return 0;
 }
